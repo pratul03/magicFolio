@@ -26,7 +26,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/pmresume.pdf", icon: StickyNoteIcon, label: "Resume" },
+    { href: "/pm_resume.pdf", icon: StickyNoteIcon, label: "Resume" },
   ],
   contact: {
     email: "pratulmakar02@gmail.com",
