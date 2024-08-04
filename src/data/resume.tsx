@@ -4,7 +4,7 @@ import { HomeIcon, StickyNoteIcon } from "lucide-react";
 export const DATA = {
   name: "Pratul Makar",
   initials: "PM",
-  url: "https://dillion.io",
+  url: "https://magic-folio.vercel.app/",
   location: "Kolkata, WB",
   locationLink: "https://www.google.com/maps/place/Baruipur",
   description: "Aspiring Software Engineer.Love to learn and build things.",
