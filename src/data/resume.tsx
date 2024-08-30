@@ -181,5 +181,34 @@ export const DATA = {
       ],
       image: "/3dp.png",
     },
+    {
+      title: "Potion Notes",
+      href: "https://potion-notes-nine.vercel.app/",
+      dates: "Aug 2024 - Aug 2024",
+      active: true,
+      description:
+        "Developed a nice easy to use free notes application similar to notion.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "EdgeStore",
+        "Convex",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://potion-notes-nine.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pratul03/potion",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/potion.png",
+    },
   ],
 } as const;
