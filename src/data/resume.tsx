@@ -7,9 +7,9 @@ export const DATA = {
   url: "https://magic-folio.vercel.app/",
   location: "Kolkata, WB",
   locationLink: "https://www.google.com/maps/place/Baruipur",
-  description: "Aspiring Software Engineer.Love to learn and build things.",
+  description: "Full Stack Developer.It's great to learn and build things.",
   summary:
-    "Full Stack Developer with hands-on experience in scalable web systems, microservices, CRM platforms, audit systems, and billing applications. Strong in both frontend and backend development with production bug fixing and feature delivery experience. Focused on clean architecture and high performance solutions.",
+    "Full Stack Developer with hands-on experience of 1+ years in scalable web systems, microservices, CRM platforms, audit systems, and billing applications. Strong in both frontend and backend development with production bug fixing and feature delivery experience. Focused on clean architecture and high performance solutions.",
   avatarUrl: "/me.png",
   skills: [
     "React",
