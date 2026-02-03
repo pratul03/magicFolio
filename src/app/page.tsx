@@ -86,9 +86,67 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="experience">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <h2 className="text-xl font-bold">Experience</h2>
+          </BlurFade>
+          {DATA.experience.map((experience, id) => (
+            <BlurFade
+              key={`${experience.company}-${experience.role}`}
+              delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+            >
+              <ResumeCard
+                logoUrl={experience.logoUrl}
+                altText={experience.company}
+                title={experience.company}
+                subtitle={`${experience.role} · ${experience.location}`}
+                href={experience.href || undefined}
+                badges={experience.badges}
+                period={`${experience.start} - ${experience.end}`}
+                description={experience.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="project-highlights">
+        <div className="space-y-8 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
+            <div className="flex flex-col items-center justify-center space-y-3 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Project Highlights
+                </div>
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">
+                  Work Projects
+                </h2>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {DATA.workProjects.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 13 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.href}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -109,7 +167,7 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
               >
                 <ProjectCard
                   href={project.href}
